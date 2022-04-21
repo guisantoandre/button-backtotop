@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap');
+
+$font: 'Muli', sans-serif;
+
+// general settings
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $font;
+}
+
+// header
+header {
+    min-height: 10vh;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo a {
+        font-size: 1.5rem;
+        color: #000;
+        font-weight: 700;
+    }
+
+    .menu-links ul {
+        display: flex;
+
+        li a {
+            margin-right: 4rem;
+            color: rgb(95, 95, 95);
+            font-size: 1.1rem;
+        }
+    }
+}
+
+// section
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        max-width: 70%;
+        margin-top: 3rem;
+        font-size: 1.3rem;
+    }
+}
+
+#sec1 {
+    background-color: #44ABF6;
+    
+    h2 {
+        color: #fff;
+    }
+
+    .btn {
+        background: yellow;
+        padding: 1rem 2rem;
+        color: #000;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-top: 5rem;
+    }
+}
+
+#sec2 {
+    background-color: #44F696;
+}
+
+#sec3 {
+    background-color: #FCFF54;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 4rem;
+    right: 6rem;
+    background: rgb(228, 50, 50);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s ease;
+}
